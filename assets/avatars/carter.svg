@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 440">
+<defs>
+<filter id="b" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="38"/></filter>
+<linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#0f766e"/><stop offset=".55" stop-color="#134e4a"/><stop offset="1" stop-color="#a78bfa"/>
+</linearGradient>
+<radialGradient id="v" cx=".5" cy=".38" r=".75">
+<stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#05050c" stop-opacity=".88"/>
+</radialGradient>
+</defs>
+<rect width="420" height="440" fill="#0a0a16"/>
+<circle cx="225" cy="156" r="101" fill="#0f766e" opacity="0.65" filter="url(#b)"/><circle cx="278" cy="249" r="103" fill="#134e4a" opacity="0.54" filter="url(#b)"/><circle cx="81" cy="135" r="166" fill="#a78bfa" opacity="0.69" filter="url(#b)"/>
+<g opacity="0.24" fill="url(#g)">
+<ellipse cx="199" cy="149" rx="52" ry="62"/>
+<path d="M104 440 C 111 269 159 225 199 221 C 239 225 287 269 294 440 Z"/>
+</g>
+<rect width="420" height="440" fill="url(#v)"/>
+<g stroke="#ffffff" stroke-opacity=".1" fill="none">
+<circle cx="232" cy="227" r="162" stroke-dasharray="3 9"/>
+</g>
+<circle cx="150" cy="63" r="2.2" fill="#fff" opacity=".8"/>
+<circle cx="227" cy="353" r="1.6" fill="#fff" opacity=".55"/>
+<circle cx="287" cy="268" r="1.8" fill="#fff" opacity=".65"/>
+</svg>

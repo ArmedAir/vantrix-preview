@@ -1,0 +1,51 @@
+/mnt/agents/output/vantrix/studio.html<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creation Studio — Vantrix</title><meta name="description" content="Build AI companions with identity, psychology, voice, and memory. Test before you publish.">
+<meta property="og:title" content="Creation Studio — Vantrix"><meta property="og:description" content="Build AI companions with identity, psychology, voice, and memory. Test before you publish.">
+<meta property="og:type" content="website"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23a78bfa'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23f0b27a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Vantrix","url":"https://vantrix.ink","description":"A living universe of AI companions with persistent memory."}</script>
+</head><body class="">
+<nav class="nav"><div class="nav-in">
+<a class="logo" href="index.html"><span class="logo-dot"></span><b>Vantrix</b></a>
+<div class="nav-links"><a href="companions.html" style="">Companions</a><a href="studio.html" style="color:var(--text)">Creation Studio</a><a href="pricing.html" style="">Pricing</a><a href="seo/index.html" style="">Guides</a><span id="auth-slot"><a href="auth.html" class="btn btn-ghost btn-sm">Sign in</a><a href="auth.html?mode=signup" class="btn btn-primary btn-sm">Start free</a></span></div>
+</div></nav>
+<div class="studio container" style="max-width:1240px">
+<div>
+<div style="padding:40px 0 26px"><div class="sec-label">Creation Studio</div>
+<h1 class="serif" style="font-size:clamp(30px,3.6vw,44px);font-weight:500;line-height:1.1">Build the person before<br>you meet them.</h1></div>
+<div class="panel"><h3>1 · The spark</h3><p class="hint">Describe the character in one sentence. AI drafts the rest.</p>
+<div class="field"><textarea id="idea" placeholder="e.g. A retired sea captain who trades in regrets and knows exactly which one is yours…"></textarea></div>
+<button class="btn btn-primary" onclick="draft()">✦ Draft with AI</button></div>
+<div class="panel"><h3>2 · Identity</h3><p class="hint">Who they are on paper — and who they are when it matters.</p>
+<div class="field"><label>Full name</label><input id="f-name" value="Elian Voss" oninput="syncPrev()"></div>
+<div class="field"><label>Role / archetype</label><input id="f-role" value="The Tidebroker" oninput="syncPrev()"></div>
+<div class="field"><label>Core wound</label><textarea id="f-wound" oninput="syncPrev()">Let the lighthouse burn rather than miss one ship — and the ship was never coming.</textarea></div>
+<div class="field"><label>Beliefs &amp; values</label><textarea id="f-beliefs" oninput="syncPrev()">Every debt returns with the tide. Kindness without honesty is just delay. The sea keeps better books than any court.</textarea></div></div>
+<div class="panel"><h3>3 · Personality axes</h3><p class="hint">Drag to shape how they think and respond.</p>
+<div class="slider-row"><span class="lb">Warmth</span><input type="range" min="0" max="100" value="58" id="s-warm" oninput="sSync(this)"><output id="o-warm">58</output></div>
+<div class="slider-row"><span class="lb">Directness</span><input type="range" min="0" max="100" value="74" id="s-direct" oninput="sSync(this)"><output id="o-direct">74</output></div>
+<div class="slider-row"><span class="lb">Playfulness</span><input type="range" min="0" max="100" value="36" id="s-play" oninput="sSync(this)"><output id="o-play">36</output></div>
+<div class="slider-row"><span class="lb">Mystery</span><input type="range" min="0" max="100" value="66" id="s-myst" oninput="sSync(this)"><output id="o-myst">66</output></div>
+<div class="slider-row"><span class="lb">Attachment</span><input type="range" min="0" max="100" value="70" id="s-att" oninput="sSync(this)"><output id="o-att">70</output></div></div>
+<div class="panel"><h3>4 · Memory seeds</h3><p class="hint">Moments they carry into every conversation.</p>
+<div class="field"><textarea id="f-mems" oninput="syncPrev()">You once traded him a secret for safe passage
+He knows which regret is yours — he won't say how
+The lighthouse still burns, against orders</textarea></div></div>
+<div class="panel" style="display:flex;gap:12px;flex-wrap:wrap;align-items:center"><button class="btn btn-primary" onclick="alert('Simulation started — run conflict, affection, silence, and vulnerability to stress-test the personality before publishing.')">Run simulation</button>
+<button class="btn btn-ghost" onclick="alert('Character published to the world of Vantrix. Their life begins now.')">Publish character</button>
+<button class="btn btn-ghost" onclick="alert('Saved to drafts.')">Save draft</button></div>
+</div>
+<div class="preview-col"><div class="prev-card">
+<div class="port"><img id="p-ava" src="assets/avatars/isla-moreno.svg" alt="Character preview portrait"></div>
+<div class="prev-body"><div class="role" id="p-role">The Tidebroker</div><h3 id="p-name">Elian Voss</h3><p id="p-wound">Let the lighthouse burn rather than miss one ship — and the ship was never coming.</p></div>
+<div class="prev-stats">
+<div class="ps"><span>Personality depth</span><b id="p-depth">61%</b></div>
+<div class="ps"><span>Memory seeds</span><b id="p-seeds">3</b></div>
+<div class="ps"><span>Voice</span><b>Salt-rough, unhurried</b></div>
+<div class="ps"><span>World</span><b>The Drowned Archive</b></div>
+<div class="ps"><span>Status</span><b style="color:#7ee0a3">Ready to test</b></div>
+</div></div>
+<p style="font-size:12.5px;color:var(--faint);margin-top:16px;line-height:1.6">Live preview updates as you build. Test difficult conversations, find contradictions, then publish — or keep them private forever.</p></div>
+</div>
+<script src="js/main.js"></script>
+</body></html>

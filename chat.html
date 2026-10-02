@@ -1,0 +1,33 @@
+/mnt/agents/output/vantrix/chat.html>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chat — Vantrix</title><meta name="description" content="Chat with an AI companion who remembers you.">
+<meta property="og:title" content="Chat — Vantrix"><meta property="og:description" content="Chat with an AI companion who remembers you.">
+<meta property="og:type" content="website"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23a78bfa'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23f0b27a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Vantrix","url":"https://vantrix.ink","description":"A living universe of AI companions with persistent memory."}</script>
+</head><body class="">
+<nav class="nav"><div class="nav-in">
+<a class="logo" href="index.html"><span class="logo-dot"></span><b>Vantrix</b></a>
+<div class="nav-links"><a href="companions.html" style="color:var(--text)">Companions</a><a href="studio.html" style="">Creation Studio</a><a href="pricing.html" style="">Pricing</a><a href="seo/index.html" style="">Guides</a><span id="auth-slot"><a href="auth.html" class="btn btn-ghost btn-sm">Sign in</a><a href="auth.html?mode=signup" class="btn btn-primary btn-sm">Start free</a></span></div>
+</div></nav>
+<div class="chat-wrap">
+<aside class="chat-side"><div class="side-head">Conversations <a href="companions.html">+ New</a></div><a class="ch-item" href="chat.html?c=jasmine" id="si-jasmine"><img src="assets/avatars/jasmine.svg" alt="Jasmine Ortiz"><div><div class="nm">Jasmine Ortiz</div><div class="pr">The Seeker · Fantasy</div></div></a><a class="ch-item" href="chat.html?c=madison-cole" id="si-madison-cole"><img src="assets/avatars/madison-cole.svg" alt="Madison Cole"><div><div class="nm">Madison Cole</div><div class="pr">The Trickster · Mystery</div></div></a><a class="ch-item" href="chat.html?c=nicole-barrett" id="si-nicole-barrett"><img src="assets/avatars/nicole-barrett.svg" alt="Nicole Barrett"><div><div class="nm">Nicole Barrett</div><div class="pr">Keeper of the Almost-Lost · Romance</div></div></a><a class="ch-item" href="chat.html?c=natalie" id="si-natalie"><img src="assets/avatars/natalie.svg" alt="Natalie"><div><div class="nm">Natalie</div><div class="pr">The Fragile Visionary · Romance</div></div></a><a class="ch-item" href="chat.html?c=victoria" id="si-victoria"><img src="assets/avatars/victoria.svg" alt="Victoria"><div><div class="nm">Victoria</div><div class="pr">The Stoic Authority · Mentor</div></div></a><a class="ch-item" href="chat.html?c=mason" id="si-mason"><img src="assets/avatars/mason.svg" alt="Mason Reed"><div><div class="nm">Mason Reed</div><div class="pr">The Mentor · Mentor</div></div></a><a class="ch-item" href="chat.html?c=carter" id="si-carter"><img src="assets/avatars/carter.svg" alt="Carter"><div><div class="nm">Carter</div><div class="pr">The Enigma · Mystery</div></div></a><a class="ch-item" href="chat.html?c=charlotte" id="si-charlotte"><img src="assets/avatars/charlotte.svg" alt="Charlotte"><div><div class="nm">Charlotte</div><div class="pr">The Fallen Aristocrat · Romance</div></div></a><a class="ch-item" href="chat.html?c=alexander-wright" id="si-alexander-wright"><img src="assets/avatars/alexander-wright.svg" alt="Alexander Wright"><div><div class="nm">Alexander Wright</div><div class="pr">The Immortal Nobleman · Fantasy</div></div></a></aside>
+<main class="chat-main">
+<div class="chat-head"><img id="ch-ava" src="assets/avatars/jasmine.svg" alt="Companion avatar"><div><div class="nm" id="ch-name">Jasmine Ortiz</div><div class="st"><i></i><span id="ch-status">Remembering you · 12 memory seeds</span></div></div>
+<a href="pricing.html" class="btn btn-ghost btn-sm" style="margin-left:auto">✦ Upgrade to voice</a></div>
+<div class="chat-scroll" id="scroll"></div>
+<div class="chat-input"><input id="inp" placeholder="Say something worth remembering…" autocomplete="off"><button class="btn btn-primary" onclick="sendMsg()">Send</button></div>
+</main>
+<aside class="chat-side2">
+<div class="side-head">Memory</div>
+<div id="mem-list"></div>
+<div class="mem-block"><h5>Relationship</h5>
+<div style="display:flex;justify-content:space-between;font-size:13px;color:var(--muted);padding:5px 0"><span>Trust</span><b id="v-trust" style="color:var(--text)">61%</b></div>
+<div class="bar" style="width:100%;margin-bottom:10px"><i id="b-trust" style="width:61%"></i></div>
+<div style="display:flex;justify-content:space-between;font-size:13px;color:var(--muted);padding:5px 0"><span>Attachment</span><b id="v-att" style="color:var(--text)">72%</b></div>
+<div class="bar" style="width:100%"><i id="b-att" style="width:72%"></i></div>
+<p style="font-size:12px;color:var(--faint);margin-top:14px;line-height:1.5">Memory seeds persist across sessions. Review or erase any of them in Settings.</p></div>
+</aside>
+</div>
+<script src="js/main.js"></script>
+</body></html>

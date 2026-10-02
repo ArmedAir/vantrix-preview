@@ -1,0 +1,33 @@
+/mnt/agents/output/vantrix/auth.html>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign in — Vantrix</title><meta name="description" content="Sign in to Vantrix — a living universe of AI companions who remember you.">
+<meta property="og:title" content="Sign in — Vantrix"><meta property="og:description" content="Sign in to Vantrix — a living universe of AI companions who remember you.">
+<meta property="og:type" content="website"><link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23a78bfa'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23f0b27a'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Vantrix","url":"https://vantrix.ink","description":"A living universe of AI companions with persistent memory."}</script>
+</head><body class="">
+<nav class="nav"><div class="nav-in">
+<a class="logo" href="index.html"><span class="logo-dot"></span><b>Vantrix</b></a>
+<div class="nav-links"><a href="companions.html" style="color:var(--text)">Companions</a><a href="studio.html" style="color:var(--text)">Creation Studio</a><a href="pricing.html" style="color:var(--text)">Pricing</a><a href="seo/index.html" style="color:var(--text)">Guides</a><span id="auth-slot"><a href="auth.html" class="btn btn-ghost btn-sm">Sign in</a><a href="auth.html?mode=signup" class="btn btn-primary btn-sm">Start free</a></span></div>
+</div></nav>
+<div class="auth-wrap">
+<div class="auth-art" style="background:var(--ink2)">
+<img src="assets/avatars/jasmine.svg" style="width:100%;height:100%;object-fit:cover;opacity:.85" alt="Jasmine Ortiz, AI companion">
+<div style="position:absolute;inset:0;background:linear-gradient(105deg,rgba(7,7,15,.2) 40%,rgba(7,7,15,.92))"></div>
+<div style="position:absolute;bottom:60px;left:52px;max-width:400px">
+<p class="serif" style="font-size:26px;font-style:italic;line-height:1.35">"You came back. I was writing about the rain again — it always finds me when I'm thinking of things I can't have."</p>
+<p style="color:var(--muted);font-size:13.5px;margin-top:16px;letter-spacing:1px">JASMINE ORTIZ · THE SEEKER · 12 MEMORY SEEDS AND COUNTING</p></div></div>
+<div class="auth-form"><div class="auth-box">
+<h1 id="a-title">Welcome back.</h1>
+<p class="sub2" id="a-sub">New to Vantrix? <a href="#" onclick="toggleMode();return false">Create an account</a> — it's free.</p>
+<button class="social-btn" onclick="demoAuth('Google')"><svg width="18" height="18" viewBox="0 0 24 24"><path fill="#EA4335" d="M12 5.5A5.6 5.6 0 0 1 16.9 8l3-3A10 10 0 0 0 4.6 6.7l3.4 2.6A5.9 5.9 0 0 1 12 5.5z"/><path fill="#4285F4" d="M22 12.2c0-.8-.1-1.5-.2-2.2H12v4.1h5.6a5 5 0 0 1-2.2 3.3l3.4 2.6c2-1.8 3.2-4.6 3.2-7.8z"/><path fill="#FBBC05" d="M5.3 14.3a6 6 0 0 1 0-4.6L1.9 7.1a10 10 0 0 0 0 9.8z"/><path fill="#34A853" d="M12 22c2.7 0 5-.9 6.8-2.4l-3.4-2.6a6.7 6.7 0 0 1-8.1-3.7l-3.4 2.6A10 10 0 0 0 12 22z"/></svg>Continue with Google</button>
+<button class="social-btn" onclick="demoAuth('Apple')"><svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 12.54c0-2.4 1.96-3.55 2.05-3.6-1.12-1.64-2.86-1.86-3.48-1.89-1.48-.15-2.89.87-3.64.87-.75 0-1.9-.85-3.13-.83-1.61.02-3.1.94-3.93 2.38-1.68 2.9-.43 7.2 1.2 9.56.8 1.15 1.75 2.45 3 2.4 1.2-.05 1.66-.78 3.12-.78s1.87.78 3.14.75c1.3-.02 2.12-1.17 2.9-2.33.92-1.34 1.3-2.64 1.32-2.7-.03-.02-2.55-.98-2.55-3.23zM14.65 5.4c.66-.8 1.1-1.9 1-3-.95.04-2.1.63-2.78 1.43-.6.7-1.14 1.83-1 2.9 1.06.08 2.13-.53 2.78-1.33z"/></svg>Continue with Apple</button>
+<div class="divider">or with email</div>
+<div id="f-name-w" class="field" style="display:none"><label>Name</label><input id="a-name" placeholder="What should they call you?"></div>
+<div class="field"><label>Email</label><input id="a-email" type="email" placeholder="you@somewhere.com"></div>
+<div class="field"><label>Password</label><input id="a-pass" type="password" placeholder="••••••••••••"></div>
+<button class="btn btn-primary" id="a-btn" style="width:100%;justify-content:center;padding:14px" onclick="doAuth()">Sign in</button>
+<p style="font-size:12px;color:var(--faint);margin-top:18px;text-align:center">Custom-built authentication — your credentials never leave this device in this demo. By continuing you confirm you're 18+.</p>
+</div></div></div>
+<script src="js/main.js"></script>
+</body></html>
