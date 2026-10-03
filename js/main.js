@@ -242,26 +242,32 @@ function vApplyAuthMode(){
     if(sub) sub.innerHTML='New to Vantrix? <a href="#" onclick="toggleMode();return false">Create an account</a> — it\'s free.';
   }
 }
+// This is a static pitch/demo build with no real backend -- sign-in and
+// sign-up both hand off to the real, live Vantrix app rather than faking an
+// account locally. V_REAL_LOGIN_URL is the one place that destination lives.
+var V_REAL_LOGIN_URL='https://vantrix.ink/login';
+function vRealAuthUrl(){
+  return V_REAL_LOGIN_URL+(V_AUTH_MODE==='signup'?'?mode=sign-up':'');
+}
 function demoAuth(provider){
   var btn=event&&event.target?event.target.closest('button'):null;
   if(btn){btn.disabled=true;btn.textContent='Connecting to '+provider+'…'}
   setTimeout(function(){
-    VAuth.signup(provider+' User',provider.toLowerCase()+'-demo@vantrix.ink');
-    location.href='companions.html';
-  },700);
+    location.href=vRealAuthUrl();
+  },500);
 }
 function doAuth(){
   var email=document.getElementById('a-email'), pass=document.getElementById('a-pass'),
-      nameEl=document.getElementById('a-name'), btn=document.getElementById('a-btn');
+      btn=document.getElementById('a-btn');
   if(!email||!pass) return;
   var emailVal=email.value.trim(), passVal=pass.value;
   if(!emailVal||emailVal.indexOf('@')<0){email.style.borderColor='#e06b6b';email.focus();return}
   if(!passVal||passVal.length<4){pass.style.borderColor='#e06b6b';pass.focus();return}
-  var name=(nameEl&&nameEl.value.trim())||emailVal.split('@')[0];
   if(btn){btn.disabled=true;btn.textContent=(V_AUTH_MODE==='signup')?'Creating account…':'Signing in…'}
+  // This preview has no backend of its own -- hand off to the real app's
+  // sign-up (new account) or sign-in (existing account) flow.
   setTimeout(function(){
-    VAuth.signup(name,emailVal);
-    location.href='companions.html';
+    location.href=vRealAuthUrl();
   },500);
 }
 function vInitAuth(){
